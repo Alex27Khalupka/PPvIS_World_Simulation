@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="700.0" style="-fx-background-color: #cdcdcd;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.UINewPredator">
+    <children>
+        <Label layoutX="107.0" layoutY="14.0" prefHeight="46.0" prefWidth="487.0" text="Добавление хищника на игровое поле">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Button fx:id="addPredatorButton" layoutX="268.0" layoutY="382.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="144.0" text="Добавить">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+      <Label layoutX="52.0" layoutY="74.0" prefHeight="30.0" prefWidth="433.0" text="Выберите хищника, которого хотите добавить:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="tigerRadioButton" layoutX="83.0" layoutY="113.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="113.0" text="Тигр">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="lionRadioButton" layoutX="83.0" layoutY="143.0" mnemonicParsing="false" text="Лев">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="cheetahRadioButton" layoutX="83.0" layoutY="173.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" text="Гепард">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="52.0" layoutY="227.0" prefHeight="63.0" prefWidth="668.0" text="Введите координаты клетки в которой будет расположен выбранный хищник">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="299.0" text="X:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="337.0" text="Y:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="125.0" layoutY="301.0" prefHeight="26.0" prefWidth="207.0" promptText="X координата" style="-fx-background-color: #ffffff;" fx:id="xCoordinateTextField" />
+      <TextField fx:id="yCoordinateTextField" layoutX="125.0" layoutY="339.0" prefHeight="26.0" prefWidth="207.0" promptText="Y координата" style="-fx-background-color: #ffffff;" />
+    </children>
+</AnchorPane>
